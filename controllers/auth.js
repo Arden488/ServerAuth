@@ -17,7 +17,7 @@ exports.signup = (req, res, next) => {
     user.save(err => {
       if (err) return next(err);
 
-      res.json(user);
+      res.json({ success: true });
     });
   });
 }
