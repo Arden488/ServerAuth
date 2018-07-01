@@ -11,7 +11,7 @@ app.use(morgan('combined'));
 app.use(bodyParser.json({ type: '*/*' }));
 router(app);
 
-const port = process.env.PORT || 3090;
+const port = process.env.PORT || 3030;
 
 app.listen(port, () => {
   console.log(`App listening on port ${port}`);
